@@ -1,0 +1,261 @@
+/*  Common Css Start  */
+* {
+   
+    margin:  0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    margin: auto;
+    width: 1160px;
+   
+}
+
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+    text-transform: uppercase;
+}
+ .heading p{
+    font-size: 16px;
+    color: #7e8287;
+}
+
+   .row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.align-center{
+        align-items: center;
+}
+
+.justify-center{
+    justify-content: center ;    
+}
+ .heading .common-p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+.s-card i{
+    font-size: 50px;
+    color: #02918b;
+}
+
+.s-card h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+}
+
+.s-card p{
+    font-size: 11px;
+    color: #7e8287;
+}
+/*  Common Css End  */
+
+/*  Nav Section Start  */
+nav{
+    background-color: #02918b;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    font-size: 12px ;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 19px 25px;
+    display: inline-block;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: #cfc91d;
+}
+/*  Nav Section  End  */
+
+/*  banner Section start  */
+
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(./../img/banner.jpg);
+    background-size: cover;
+    padding: 200px 0;
+}
+
+#banner .container{
+    text-align: center;
+    color: #ffffff;
+}
+#banner .container h2{
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    
+  
+}
+#banner .container p{
+   
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#banner .container h1{
+    line-height: 60px;
+    font-size: 50px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.banner_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.banner_info a{
+    margin: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: #cfc91d;
+    padding: 14px 42px;
+    text-transform: uppercase;
+}
+
+a:hover{
+   color: #02918b;
+}
+
+/*  banner Section end  */
+/* About Section Start */
+#about{
+    padding: 98px 0;
+}
+
+
+
+#about .about_cards{
+    margin-top: 50px;
+}
+
+
+
+#about .about_card{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 36px 0;
+}
+
+#about .about_card span{
+    font-size: 30px;
+    color: #02918c;
+}
+
+#about .about_card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 28px 0;
+}
+
+#about .about_card p{
+    color: #7e8287;
+    font-size: 11px;
+    line-height: 16.5px;
+}
+
+#about .about_card:last-child {
+    border: none;
+    
+}
+
+
+
+/* About Section Start */
+#service{
+    background-image: url("../img/service.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+}
+
+.service-card{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#service .heading{
+    width: 50%;
+  
+    text-align: left;
+  
+}
+
+#service .s-card{
+    text-align: left;
+    padding: 40px 0px;
+}
+/*  Service Section  End  */
+/* Work Section  Start*/
+#work{
+    padding: 70px 0;
+}
+#work .work_card{
+    width: 25%;
+    position: relative;
+    
+}
+
+#work .work_card img{
+    width: 100%;
+    display: block;
+}
+
+
+#work .work_card .overlay{
+    background-color: rgba(2, 145, 140, 0.87);
+    position: absolute;
+    inset: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#work .work_card:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+
+/* WORK ENDS HERE */
+
